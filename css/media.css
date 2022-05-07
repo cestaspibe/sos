@@ -1,0 +1,141 @@
+@media (max-width:1300px) {
+  #dois .left p {
+    padding:0 2rem;
+  }
+}
+
+@media (max-width:936px) {
+  .container {
+  margin-right:1.5rem;
+  margin-left:1.5rem;
+  }
+  #dois .left p  {
+    padding:0 2rem;
+  }
+  /* ABOuT */
+  .intro {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width:835px) {
+  #header nav{
+    display:flex;
+    flex-direction: column;
+    height:auto;
+  }
+  #one .container{
+    grid-template-columns: 1fr;
+    /* margin:0; */
+  }
+  #one .texto {
+    justify-content: center;
+    padding:2rem;
+    z-index: 0;
+  }
+  #one .texto::after {
+    left:2%;
+    width:55%;
+  }
+  #artigos .box {
+    grid-template-columns: 1fr;
+    gap:2rem;
+    border-bottom: 1px solid var(--light-red);
+    padding:1rem 0;
+  }
+}
+
+@media (max-width:661px) {
+  #footer .container {
+    grid-template-columns: 1fr;
+  }
+  
+  #footer ul li {
+    padding:.25rem 0;
+    font-size:1.3rem;
+  }
+}
+
+@media (max-width:651px) {
+  #header {
+    position:sticky;
+    z-index: 1;
+  }
+
+  #header nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding:0 1rem;
+  }
+
+  #header .menu {
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 10;
+    width:100vw;
+    height:100vh;
+    background:var(--white);
+    display:grid;
+    place-content: center;
+    text-align:center;
+    opacity: 0;
+    visibility: hidden;
+    transition:all .2s;
+  }
+  #header .show .menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  #header .open-close {
+    display:block;
+  }
+  #header .open {
+    /* position:absolute;
+    top:50px;
+    right:50px; */
+    font-size:1.4rem;
+  }
+  #header .close {
+    display:none;
+  }
+  #header nav.show .open {
+    display:none;
+  }
+  #header nav.show .close {
+    display:block;
+    position:relative;
+    z-index: 11;
+    font-size:1.4rem;
+  }
+}
+
+
+@media (max-width:550px) {
+  .container {
+    margin-left:1rem;
+    margin-right:1rem;
+  }
+  #header .img img {
+    width:70px;
+  }
+  #one .texto {
+    grid-row:1/1;
+}
+  #dois .left h3 {
+    width:auto;
+    margin:0 2rem;
+    font-size:2rem;
+    text-align: center;
+    border-bottom: 1px solid var(--light-red);
+  }
+}
+
+@media (max-width:481px) {
+  #about .cards {
+    grid-template-columns: 1fr;
+  }
+  #about .box-card {
+    max-width:90%;
+  }
+}
