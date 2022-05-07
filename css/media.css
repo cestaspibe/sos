@@ -44,6 +44,12 @@
   }
 }
 
+@media (max-width:821px) {
+  #footer .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (max-width:661px) {
   #footer .container {
     grid-template-columns: 1fr;
